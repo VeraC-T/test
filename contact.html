@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Alexandra Chen</title>
+    <meta name="description" content="Get in touch with Alexandra Chen for commissions, collaborations, and creative projects">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="logo">Alexandra Chen</a>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <h1 class="page-title">Contact</h1>
+                    <p class="page-subtitle">Let's discuss your next creative project or collaboration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2 class="contact-title">Send a Message</h2>
+                        <p class="contact-description">
+                            I'm always excited to hear about new projects and creative opportunities. 
+                            Fill out the form below and I'll get back to you as soon as possible.
+                        </p>
+                        
+                        <form class="contact-form" id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    required 
+                                    autocomplete="name"
+                                    placeholder="Your full name"
+                                >
+                                <span class="form-error" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    required 
+                                    autocomplete="email"
+                                    placeholder="your.email@example.com"
+                                >
+                                <span class="form-error" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select id="subject" name="subject" class="form-select">
+                                    <option value="">Select a subject</option>
+                                    <option value="commission">Commission Request</option>
+                                    <option value="collaboration">Collaboration Opportunity</option>
+                                    <option value="exhibition">Exhibition Inquiry</option>
+                                    <option value="interview">Interview Request</option>
+                                    <option value="licensing">Licensing & Usage Rights</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Project Budget (Optional)</label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-1k">Under $1,000</option>
+                                    <option value="1k-5k">$1,000 - $5,000</option>
+                                    <option value="5k-10k">$5,000 - $10,000</option>
+                                    <option value="10k-25k">$10,000 - $25,000</option>
+                                    <option value="25k-plus">$25,000+</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline" class="form-label">Project Timeline (Optional)</label>
+                                <select id="timeline" name="timeline" class="form-select">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="6-plus-months">6+ months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-textarea" 
+                                    rows="6" 
+                                    required
+                                    placeholder="Tell me about your project, ideas, or questions..."
+                                ></textarea>
+                                <span class="form-error" id="message-error"></span>
+                            </div>
+
+                            <div class="form-group form-checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="newsletter" id="newsletter" class="form-checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="checkbox-text">I'd like to receive updates about new artwork and exhibitions</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading" style="display: none;">Sending...</span>
+                            </button>
+                        </form>
+
+                        <!-- Success/Error Messages -->
+                        <div class="form-message form-success" id="success-message" style="display: none;">
+                            <div class="message-icon">✓</div>
+                            <div class="message-content">
+                                <h3>Message Sent Successfully!</h3>
+                                <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+                            </div>
+                        </div>
+
+                        <div class="form-message form-error-message" id="error-message" style="display: none;">
+                            <div class="message-icon">⚠</div>
+                            <div class="message-content">
+                                <h3>Something went wrong</h3>
+                                <p>Please check your information and try again, or contact me directly via email.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="contact-info-container">
+                        <h2 class="contact-title">Get in Touch</h2>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Email</h3>
+                                    <a href="mailto:hello@alexandrachen.art" class="contact-value">hello@alexandrachen.art</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Location</h3>
+                                    <p class="contact-value">New York City, NY</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Specialties</h3>
+                                    <p class="contact-value">Digital Art, Commissions, Exhibitions</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 class="contact-label">Response Time</h3>
+                                    <p class="contact-value">24-48 hours</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <h3 class="social-title">Follow My Work</h3>
+                            <div class="social-buttons">
+                                <a href="#" class="social-btn instagram">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.2c3.2 0 3.6.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.25.07 1.65.07 4.85s-.01 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.25.06-1.65.07-4.85.07s-3.6-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s.01-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.71-2.13 1.38C1.34 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.71 1.46 1.38 2.13.67.67 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.71 2.13-1.38.67-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.71-1.46-1.38-2.13C19.46 1.34 18.79.93 18 .63c-.76-.3-1.64-.5-2.91-.56C13.67.01 13.26 0 12 0z"/>
+                                        <circle cx="12" cy="12" r="3.2"/>
+                                        <circle cx="18.4" cy="5.6" r="1.2"/>
+                                    </svg>
+                                    <span>Instagram</span>
+                                </a>
+                                <a href="#" class="social-btn behance">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.672 1.48.672 2.45 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.35-1.05.6-1.67.76-.63.16-1.31.24-2.05.24H0V4.51h6.938v-.007zM3.495 7.05v2.8h2.77c.36 0 .66-.05.91-.14.25-.09.45-.22.6-.38.17-.16.28-.35.35-.56.08-.2.11-.43.11-.67 0-.48-.14-.86-.43-1.13-.29-.27-.77-.4-1.44-.4H3.495v.48zm0 5.16v3.36h3.32c.38 0 .7-.05.98-.15.29-.1.51-.24.69-.42.18-.18.31-.39.38-.63.08-.24.11-.49.11-.76 0-.27-.03-.52-.09-.75-.06-.23-.17-.43-.32-.58-.15-.15-.36-.27-.63-.35-.27-.08-.6-.12-.96-.12H3.495v.4zm11.23-2.12c-.5-.25-1.06-.37-1.69-.37-.39 0-.75.07-1.06.2-.32.13-.6.32-.81.57-.22.25-.37.55-.46.89-.1.34-.13.72-.1 1.12h5.32c-.06-.58-.23-1.05-.6-1.41zm.09 2.94c.25.21.54.31.87.31.22 0 .42-.05.6-.13.18-.08.33-.19.45-.33.12-.14.21-.29.27-.44.06-.15.08-.3.07-.43h1.93c-.08.35-.22.68-.42.98-.2.3-.47.55-.8.75-.33.2-.71.34-1.14.42-.43.08-.9.12-1.4.12-.51 0-.99-.08-1.43-.25-.44-.17-.8-.42-1.1-.75-.3-.33-.53-.73-.69-1.2-.16-.47-.23-.99-.23-1.56 0-.56.08-1.08.25-1.56.17-.48.41-.89.73-1.23.32-.34.71-.6 1.15-.78.44-.18.94-.27 1.49-.27.58 0 1.09.08 1.54.25.45.17.83.41 1.14.71.31.3.54.66.69 1.06.15.4.23.84.23 1.31 0 .22-.01.43-.04.62-.03.19-.07.35-.13.48h-6.15c0 .36.14.66.39.87zM15.3 4.5h8.7v1.4h-8.7V4.5z"/>
+                                    </svg>
+                                    <span>Behance</span>
+                                </a>
+                                <a href="#" class="social-btn dribbble">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.626 0 12 0zm7.568 5.302c1.4 1.808 2.188 4.05 2.188 6.698 0 .633-.067 1.258-.2 1.866-.354-.078-3.121-.632-5.943-.292-.06-.146-.119-.292-.186-.446-.183-.433-.385-.864-.596-1.288 2.646-1.08 3.466-2.642 3.737-3.538zM12 2.167c2.561 0 4.9.923 6.717 2.456-.2.267-.986 1.28-3.622 2.27-1.617-2.97-3.417-5.4-3.69-5.78.862-.169 1.726-.263 2.595-.263zm-3.488.546c.257.365 2.06 2.81 3.69 5.748-4.583 1.217-8.663 1.217-9.123 1.217-.067-.433-.1-.875-.1-1.327 0-2.913 1.433-5.49 3.533-7.138zM1.934 12.283c-.067-.067-.067-.134-.067-.2 0 0 .067 0 .134 0 .566 0 5.129-.067 10.125-1.417.2.4.4.8.566 1.217-4.65 1.3-8.731 4.984-9.297 5.683-1.434-1.617-2.261-3.75-2.261-6.083zm8.197 8.53c-2.329 0-4.458-.798-6.142-2.128.433-.566 3.622-3.756 8.997-5.583l.067-.033c1.117 2.895 1.584 5.315 1.751 6.025-1.5.75-3.2 1.15-4.95 1.15zm6.784-1.584c-.134-.8-.567-3.154-1.617-6.025 2.695-.433 5.056.267 5.323.367-.4 2.362-1.65 4.42-3.706 5.658z"/>
+                                    </svg>
+                                    <span>Dribbble</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="availability-status">
+                            <div class="status-indicator available"></div>
+                            <div class="status-content">
+                                <h3 class="status-title">Currently Available</h3>
+                                <p class="status-description">Accepting new projects for Q2-Q3 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Common questions about working together</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">What types of projects do you work on?</h3>
+                        <p class="faq-answer">I specialize in digital art commissions, brand illustrations, gallery exhibitions, and collaborative art projects. I'm particularly passionate about projects that explore the intersection of technology and creativity.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">What's your typical project timeline?</h3>
+                        <p class="faq-answer">Project timelines vary depending on complexity and scope. Simple commissions typically take 2-4 weeks, while larger projects can take 2-6 months. I'll provide a detailed timeline during our initial consultation.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you offer revisions?</h3>
+                        <p class="faq-answer">Yes, I include up to 3 rounds of revisions in all my projects to ensure the final result meets your vision. Additional revisions can be discussed if needed.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can you work with tight deadlines?</h3>
+                        <p class="faq-answer">I can accommodate urgent projects depending on my current workload. Rush projects may include an additional fee and I'll let you know upfront if the timeline is feasible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Alexandra Chen</h3>
+                    <p class="footer-subtitle">Digital Artist</p>
+                </div>
+                <div class="footer-links">
+                    <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    <a href="about.html" class="footer-link">About</a>
+                    <a href="contact.html" class="footer-link">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.2c3.2 0 3.6.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.25.07 1.65.07 4.85s-.01 3.6-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.25.06-1.65.07-4.85.07s-3.6-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23C2.21 15.6 2.2 15.2 2.2 12s.01-3.6.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.4 2.21 8.8 2.2 12 2.2M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.71-2.13 1.38C1.34 2.68.93 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.3.79.71 1.46 1.38 2.13.67.67 1.34 1.08 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.3 1.46-.71 2.13-1.38.67-.67 1.08-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.3-.79-.71-1.46-1.38-2.13C19.46 1.34 18.79.93 18 .63c-.76-.3-1.64-.5-2.91-.56C13.67.01 13.26 0 12 0z"/>
+                            <circle cx="12" cy="12" r="3.2"/>
+                            <circle cx="18.4" cy="5.6" r="1.2"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Behance">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.672 1.48.672 2.45 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.35-1.05.6-1.67.76-.63.16-1.31.24-2.05.24H0V4.51h6.938v-.007zM3.495 7.05v2.8h2.77c.36 0 .66-.05.91-.14.25-.09.45-.22.6-.38.17-.16.28-.35.35-.56.08-.2.11-.43.11-.67 0-.48-.14-.86-.43-1.13-.29-.27-.77-.4-1.44-.4H3.495v.48zm0 5.16v3.36h3.32c.38 0 .7-.05.98-.15.29-.1.51-.24.69-.42.18-.18.31-.39.38-.63.08-.24.11-.49.11-.76 0-.27-.03-.52-.09-.75-.06-.23-.17-.43-.32-.58-.15-.15-.36-.27-.63-.35-.27-.08-.6-.12-.96-.12H3.495v.4zm11.23-2.12c-.5-.25-1.06-.37-1.69-.37-.39 0-.75.07-1.06.2-.32.13-.6.32-.81.57-.22.25-.37.55-.46.89-.1.34-.13.72-.1 1.12h5.32c-.06-.58-.23-1.05-.6-1.41zm.09 2.94c.25.21.54.31.87.31.22 0 .42-.05.6-.13.18-.08.33-.19.45-.33.12-.14.21-.29.27-.44.06-.15.08-.3.07-.43h1.93c-.08.35-.22.68-.42.98-.2.3-.47.55-.8.75-.33.2-.71.34-1.14.42-.43.08-.9.12-1.4.12-.51 0-.99-.08-1.43-.25-.44-.17-.8-.42-1.1-.75-.3-.33-.53-.73-.69-1.2-.16-.47-.23-.99-.23-1.56 0-.56.08-1.08.25-1.56.17-.48.41-.89.73-1.23.32-.34.71-.6 1.15-.78.44-.18.94-.27 1.49-.27.58 0 1.09.08 1.54.25.45.17.83.41 1.14.71.31.3.54.66.69 1.06.15.4.23.84.23 1.31 0 .22-.01.43-.04.62-.03.19-.07.35-.13.48h-6.15c0 .36.14.66.39.87zM15.3 4.5h8.7v1.4h-8.7V4.5z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alexandra Chen. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
